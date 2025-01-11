@@ -21,7 +21,7 @@ public class ShelterService{
         }
         id++;
         int option;
-        //AnimalReader reader = new AnimalReader();
+
         System.out.println("Welcome!");
         do {
             Scanner scanner = new Scanner(System.in);

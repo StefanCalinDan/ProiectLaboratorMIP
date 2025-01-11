@@ -9,7 +9,8 @@ public class Bird extends Animal implements iBird {
     private String wingSpan;
     private boolean canFly;
 
-    public Bird(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus, boolean isAdopted, String wingSpan, boolean canFly) {
+    public Bird(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus,
+                boolean isAdopted, String wingSpan, boolean canFly) {
         super(id, name, birthDate, admissionDate, healthStatus, isAdopted);
         this.wingSpan = wingSpan;
         this.canFly = canFly;

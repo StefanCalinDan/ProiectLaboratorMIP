@@ -10,7 +10,8 @@ public class Dog extends Animal implements iDog {
     private String trainingLevel;
 
     public Dog() {}
-    public Dog(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus, boolean isAdopted, String breed, String trainingLevel) {
+    public Dog(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus,
+               boolean isAdopted, String breed, String trainingLevel) {
         super(id, name, birthDate, admissionDate, healthStatus, isAdopted);
         this.breed = breed;
         this.trainingLevel = trainingLevel;

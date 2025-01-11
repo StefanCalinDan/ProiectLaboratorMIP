@@ -42,7 +42,7 @@ public class AnimalReader {
                 String catBreed = scanner.nextLine();
                 System.out.println("Is the cat sociable? (true/false):");
                 boolean isSociable = scanner.nextBoolean();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine();
 
                 return new Cat(id, name, birthDate, admissionDate, healthStatus, isAdopted, catBreed, isSociable);
 
@@ -52,7 +52,7 @@ public class AnimalReader {
 
                 System.out.println("Can the bird fly? (true/false):");
                 boolean canFly = scanner.nextBoolean();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine();
 
                 return new Bird(id, name, birthDate, admissionDate, healthStatus, isAdopted, wingSpan, canFly);
 

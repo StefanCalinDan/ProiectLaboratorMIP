@@ -15,9 +15,18 @@ class ShelterTest {
     @BeforeEach
     void setUp() {
         shelter = new Shelter();
-        shelter.addAnimal(new Dog(1, "Rex", LocalDate.of(2018, 6, 1), LocalDate.of(2022, 1, 15), "Healthy", false, "Labrador", "Advanced"));
-        shelter.addAnimal(new Cat(2, "Kitty",  LocalDate.of(2020, 3, 5), LocalDate.of(2023, 5, 20), "Healthy", false, "Siamese", true));
-        shelter.addAnimal(new Bird(3, "Tweety",  LocalDate.of(2019, 4, 12), LocalDate.of(2021, 6, 10), "Injured", false, "15cm", false));
+
+        shelter.addAnimal(new Dog(1, "Rex", LocalDate.of(2018, 6, 1),
+                LocalDate.of(2022, 1, 15), "Healthy",
+                false, "Labrador", "Advanced"));
+
+        shelter.addAnimal(new Cat(2, "Kitty",  LocalDate.of(2020, 3, 5),
+                LocalDate.of(2023, 5, 20), "Healthy",
+                false, "Siamese", true));
+
+        shelter.addAnimal(new Bird(3, "Tweety",  LocalDate.of(2019, 4, 12),
+                LocalDate.of(2021, 6, 10), "Injured",
+                false, "15cm", false));
     }
 
     @Test

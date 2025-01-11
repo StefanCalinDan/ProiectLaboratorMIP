@@ -93,6 +93,7 @@ public abstract class Animal implements iAnimal {
     public int getAge() {
         return LocalDate.now().getYear() - birthDate.getYear();
     }
+
     @JsonProperty("species")
     public String getSpecies() {
         return getClass().getSimpleName();

@@ -6,7 +6,8 @@ public class Other extends Animal implements iOther {
     private String description;
 
     public Other() {}
-    public Other(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus, boolean isAdopted, String description) {
+    public Other(int id, String name, LocalDate birthDate, LocalDate admissionDate, String healthStatus,
+                 boolean isAdopted, String description) {
         super(id, name, birthDate, admissionDate, healthStatus, isAdopted);
         this.description = description;
     }

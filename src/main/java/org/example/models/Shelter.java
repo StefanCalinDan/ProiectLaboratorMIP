@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import org.example.interfaces.iShelter;
 
 public class Shelter implements iShelter {
+
     private List<Animal> animals;
 
     public Shelter() {
@@ -52,7 +53,6 @@ public class Shelter implements iShelter {
        mapper.registerModule(new JavaTimeModule());
 
        try {
-           // Serialize the list of animals to a JSON file
            mapper.writeValue(new File(filePath), animals);
        } catch (IOException e) {
            e.printStackTrace();
@@ -64,7 +64,6 @@ public class Shelter implements iShelter {
         mapper.registerModule(new JavaTimeModule());
 
         try {
-            // Deserialize the JSON file to a list of animals
             animals = mapper.readValue(new File(filePath), new TypeReference<List<Animal>>() {});
         } catch (IOException e) {
             e.printStackTrace();
