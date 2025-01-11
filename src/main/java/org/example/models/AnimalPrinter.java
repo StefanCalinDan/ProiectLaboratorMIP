@@ -21,7 +21,7 @@ public class AnimalPrinter <T extends Animal> {
         } else if (animal instanceof Bird) {
             Bird bird = (Bird) animal;
             System.out.println("Wing Span: " + bird.getWingSpan());
-            System.out.println("Can Fly: " + bird.isCanFly());
+            System.out.println("Can Fly: " + bird.getCanFly());
         } else if (animal instanceof Other) {
             Other other = (Other) animal;
             System.out.println("Description: " + other.getDescription());

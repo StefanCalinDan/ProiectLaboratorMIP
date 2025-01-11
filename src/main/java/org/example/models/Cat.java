@@ -1,6 +1,8 @@
 package org.example.models;
+import org.example.interfaces.iCat;
+
 import java.time.LocalDate;
-public class Cat extends Animal {
+public class Cat extends Animal implements iCat {
 
     private String breed;
     private boolean isSociable;

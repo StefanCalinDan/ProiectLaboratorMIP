@@ -1,8 +1,10 @@
 package org.example.models;
 
+import org.example.interfaces.iBird;
+
 import java.time.LocalDate;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements iBird {
 
     private String wingSpan;
     private boolean canFly;
@@ -23,7 +25,7 @@ public class Bird extends Animal {
         this.wingSpan = wingSpan;
     }
 
-    public boolean isCanFly() {
+    public boolean getCanFly() {
         return canFly;
     }
 

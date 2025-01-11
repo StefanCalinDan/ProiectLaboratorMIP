@@ -1,8 +1,10 @@
 package org.example.models;
 
+import org.example.interfaces.iDog;
+
 import java.time.LocalDate;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements iDog {
 
     private String breed;
     private String trainingLevel;

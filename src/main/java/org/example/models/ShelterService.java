@@ -1,7 +1,6 @@
 package org.example.models;
 
 import org.example.interfaces.iShelter;
-import org.example.models.*;
 import java.util.*;
 import java.time.LocalDate;
 import java.time.Period;
@@ -9,7 +8,7 @@ import java.time.Period;
 import static org.example.models.AnimalPrinter.printAnimalDetails;
 import static org.example.models.AnimalReader.readAnimalFromInput;
 
-public class ShelterService {
+public class ShelterService{
 
     public void Run(){
         iShelter shelter = new Shelter();

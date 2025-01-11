@@ -21,16 +21,16 @@ class BirdTest {
     }
 
     @Test
-    void isCanFly() {
+    void getCanFly() {
         Bird bird = new Bird();
         bird.setCanFly(true);
-        assertTrue(bird.isCanFly());
+        assertTrue(bird.getCanFly());
     }
 
     @Test
     void setCanFly() {
         Bird bird = new Bird();
         bird.setCanFly(false);
-        assertFalse(bird.isCanFly());
+        assertFalse(bird.getCanFly());
     }
 }

@@ -1,6 +1,7 @@
 package org.example.models;
+import org.example.interfaces.iOther;
 import java.time.LocalDate;
-public class Other extends Animal {
+public class Other extends Animal implements iOther {
 
     private String description;
 

@@ -1,13 +1,13 @@
 package org.example.models;
 
-
 import java.time.LocalDate;
-
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+import org.example.interfaces.iAnimal;
 
 @JsonTypeInfo(
         use = JsonTypeInfo.Id.NAME,
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
         @JsonSubTypes.Type(value = Other.class, name = "Other")
 })
 
-public abstract class Animal{
+public abstract class Animal implements iAnimal {
 
     private int id;
     private String name;
