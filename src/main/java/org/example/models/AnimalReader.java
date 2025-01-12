@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AnimalReader {
 
-    public static Animal readAnimalFromInput(int id, Scanner scanner, iShelter shelter) {
+    public static void readAnimalFromInput(int id, Scanner scanner, iShelter shelter) {
         System.out.println("Enter species(Dog, Cat, Bird, Other):");
         String species = scanner.nextLine();
 
@@ -35,8 +35,8 @@ public class AnimalReader {
                 System.out.println("Enter training level:");
                 String trainingLevel = scanner.nextLine();
 
-                return new Dog(id, name, birthDate, admissionDate, healthStatus, isAdopted, dogBreed, trainingLevel);
-
+                shelter.addAnimal(new Dog(id, name, birthDate, admissionDate, healthStatus, isAdopted, dogBreed, trainingLevel));
+                break;
             case "cat":
                 System.out.println("Enter breed:");
                 String catBreed = scanner.nextLine();
@@ -44,8 +44,8 @@ public class AnimalReader {
                 boolean isSociable = scanner.nextBoolean();
                 scanner.nextLine();
 
-                return new Cat(id, name, birthDate, admissionDate, healthStatus, isAdopted, catBreed, isSociable);
-
+                shelter.addAnimal(new Cat(id, name, birthDate, admissionDate, healthStatus, isAdopted, catBreed, isSociable));
+                break;
             case "bird":
                 System.out.println("Enter wing span:");
                 String wingSpan = scanner.nextLine();
@@ -54,15 +54,15 @@ public class AnimalReader {
                 boolean canFly = scanner.nextBoolean();
                 scanner.nextLine();
 
-                return new Bird(id, name, birthDate, admissionDate, healthStatus, isAdopted, wingSpan, canFly);
-
+                shelter.addAnimal(new Bird(id, name, birthDate, admissionDate, healthStatus, isAdopted, wingSpan, canFly));
+                break;
 
             case "other":
                 System.out.println("Enter description:");
                 String description = scanner.nextLine();
 
-                return new Other(id, name, birthDate, admissionDate, healthStatus, isAdopted, description);
-
+                shelter.addAnimal(new Other(id, name, birthDate, admissionDate, healthStatus, isAdopted, description));
+                break;
 
             default:
                 throw new RuntimeException("Invalid animal type.");
